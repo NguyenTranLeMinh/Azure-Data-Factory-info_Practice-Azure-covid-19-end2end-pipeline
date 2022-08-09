@@ -1,0 +1,40 @@
+{
+	"name": "pl_transform_cases_and_deaths",
+	"properties": {
+		"activities": [
+			{
+				"name": "Transform cases and deaths",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "df_transform_cases_and_deaths",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "None",
+					"cacheSinks": {
+						"firstRowOnly": true
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "Transform"
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-08-07T03:11:53Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

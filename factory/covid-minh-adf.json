@@ -1,0 +1,9 @@
+{
+	"name": "covid-minh-adf",
+	"location": "eastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0de63838-2e07-4788-9af2-9aa797d3860b",
+		"tenantId": "94a641ce-acfd-4499-a51b-9abd55dafa25"
+	}
+}
