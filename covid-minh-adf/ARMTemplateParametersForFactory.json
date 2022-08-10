@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "covid-minh-adf"
+		},
+		"ls_ablob_covidminhsa_connectionString": {
+			"value": ""
+		},
+		"ls_adls_covidminhdl_accountKey": {
+			"value": ""
+		},
+		"ls_covid_databricks_accessToken": {
+			"value": ""
+		},
+		"ls_covid_sqldb_connectionString": {
+			"value": ""
+		},
+		"ls_adls_covidminhdl_properties_typeProperties_url": {
+			"value": "https://covidminhdl.dfs.core.windows.net/"
+		},
+		"ls_covid_databricks_properties_typeProperties_existingClusterId": {
+			"value": "0806-105053-oqv5mccb"
+		},
+		"ls_http_ecdc_data_properties_typeProperties_url": {
+			"value": "@{linkedService().sourceBaseURL}"
+		},
+		"tr_population_data_arrived_properties_typeProperties_scope": {
+			"value": "/subscriptions/6a363c1f-dc6a-4692-9e5c-658d2a49b737/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/covidminhsa"
+		}
+	}
+}
